@@ -5,10 +5,13 @@ import { Heading } from "./container/Heading/Heading";
 export default function App() {
   return (
     <Section className="App">
-      <Heading>Hello CodeSandbox</Heading>
-      <Heading>Start editing to see some magic happen!</Heading>
+      <Heading>I'm a title</Heading>
+      <Heading>I'm also a title</Heading>
       <Section className="nested-section">
-        <Heading>Hello CodeSandbox</Heading>
+        <Heading>I'm a title but nested</Heading>
+        <Section className="nth-2-nested-section">
+          <Heading>Let's dig deeper</Heading>
+        </Section>
       </Section>
     </Section>
   );
