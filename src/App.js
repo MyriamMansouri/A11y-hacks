@@ -1,8 +1,12 @@
+import { React } from "react";
+import { Section } from "./container/A11yHTMLElement/Section";
+import { Heading } from "./container/A11yHTMLElement/Heading";
+import { useIsDarkMode } from "./hooks/useIsDarkMode";
 import "./styles.css";
-import { Section } from "./container/Heading/Section";
-import { Heading } from "./container/Heading/Heading";
 
 export default function App() {
+  const isDark = useIsDarkMode();
+
   return (
     <Section className="App">
       <Heading>I'm a title</Heading>
